@@ -1,0 +1,79 @@
+@font-face {
+	font-family: 'iconfont';
+	/* project id 2116206 */
+	src: url('//at.alicdn.com/t/font_2116206_1ein5huewyz.eot');
+	src: url('//at.alicdn.com/t/font_2116206_1ein5huewyz.eot?#iefix') format('embedded-opentype'),
+		url('//at.alicdn.com/t/font_2116206_1ein5huewyz.woff2') format('woff2'),
+		url('//at.alicdn.com/t/font_2116206_1ein5huewyz.woff') format('woff'),
+		url('//at.alicdn.com/t/font_2116206_1ein5huewyz.ttf') format('truetype'),
+		url('//at.alicdn.com/t/font_2116206_1ein5huewyz.svg#iconfont') format('svg');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.iconsearch::before {
+	content: "\e67d";
+}
+
+.iconrefresh::before {
+	content: "\e67b";
+}
+
+.iconclose::before {
+	content: "\e669";
+}
+
+.iconarrow-left-bold::before {
+	content: "\e685";
+}
+
+.iconmodular::before {
+	content: "\e678";
+}
+
+.iconchart-bar::before {
+	content: "\e667";
+}
+
+.iconmenu::before {
+	content: "\e677";
+}
+
+.iconimage-text::before {
+	content: "\e675";
+}
+
+.iconyejian::before {
+	content: "\e679";
+}
+
+.iconziti::before {
+	content: "\e600";
+}
+
+.iconsunshine::before {
+	content: "\e714";
+}
+
+.icontask::before {
+	content: "\e67f";
+}
+
+.iconshare::before {
+	content: "\e67e";
+}
+
+.iconprompt::before {
+	content: "\e67c";
+}

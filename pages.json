@@ -1,0 +1,72 @@
+{
+	"pages": [{
+		"path": "pages/search/search",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/sort/sort",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/leaderBoard/leaderBoard",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/home/home",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/book/book",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/authorBook/authorBook",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/bookDetail/bookDetail",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/chapter/chapter",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "67Novel",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		// "blurEffect": "extralight",
+		"list": [{
+			"pagePath": "pages/search/search",
+			"iconPath": "static/img/search.png",
+			"selectedIconPath": "static/img/aftersearch.png",
+			"text": "搜索"
+		}, {
+			"pagePath": "pages/book/book",
+			"iconPath": "static/img/book.png",
+			"selectedIconPath": "static/img/afterbook.png",
+			"text": "书架"
+		}, {
+			"pagePath": "pages/home/home",
+			"iconPath": "static/img/home.png",
+			"selectedIconPath": "static/img/afterhome.png",
+			"text": "个人中心"
+		}]
+	}
+}
