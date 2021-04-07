@@ -3,7 +3,8 @@
 		<view class="bg"></view>
 		<navBar :nav="setNav"></navBar>
 		<view class="userInfo">
-			<button v-if="!hasUserInfo" open-type="getUserInfo" @getuserinfo="getUserInfo">登录</button>
+			<!-- <button v-if="!hasUserInfo" open-type="getUserInfo" @getuserinfo="getUserInfo">登录</button> -->
+			<button v-if="!hasUserInfo" @tap="getUserProfile">登录</button>
 			<view class="userCover" v-if="hasUserInfo">
 				<image :src="avatarUrl"></image>
 			</view>
@@ -48,10 +49,29 @@
 				this.avatarUrl = this.userInfo.avatarUrl
 				this.nickName = this.userInfo.nickName
 			} else {
-				this.getUserInfo(e)
+				this.hasUserInfo = false
 			}
 		},
 		methods: {
+			getUserProfile(e){
+				uni.getUserProfile({
+					desc:"用于完善用户信息",
+					success: res=>{
+						console.log(res)
+						this.hasUserInfo = true
+						let data = res.userInfo
+						this.userInfo = data
+						this.avatarUrl = data.avatarUrl
+						this.nickName = data.nickName
+						uni.setStorageSync('userInfo', this.userInfo)
+						uni.showToast({
+							title: '登录成功！',
+							icon: 'success',
+							duration: 1000,
+						})
+					}
+				})
+			},
 			getUserInfo(e) {
 				console.log('getUserInfo success', e);
 				let data = e.detail.userInfo
